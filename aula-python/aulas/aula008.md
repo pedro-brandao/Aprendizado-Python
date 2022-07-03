@@ -52,4 +52,38 @@ Existem duas formas básicas de importar uma biblioteca, uma forma mais generali
 ### Vamos a um exemplo prático de uma biblioteca real.
 No python assim que ele é instalado juntamente com ele está incluso uma biblioteca chamada `math` que significa matematica.
 <br>
-Nas aulas anteriores eu aprendi os operadores básicos de matematica do python, já essa biblioteca vêem com diversas outras funcionalidades que não vêm como padrão.
+Nas aulas anteriores eu aprendi os operadores básicos de matematica do python, já essa biblioteca vêem com diversas outras funcionalidades que não vêm como padrão. Desta biblioteca eu posso utilizar as seguintes funcionalidades `ceil`, `floor`, `trunc`, `pow`, `sqrt`, `factorial` que faz arredondamentos de numero flutuantes para cima.
+---  ---
+`ceil`: Faz arredondamento de numeros flutuates para cima.
+<br>
+`floor`: Faz arredondamento de numeros flutuantes para baixo.
+<br>
+`trunc`: Trava numeros flutuantes, não considerando a virgula/ponto
+<br>
+`pow`: Faz potenciação do numero indicado. Funciona semelhantemente aos 2 *
+<br>
+`sqrt`: Calcula raiz quadrada. (square root).
+<br>
+`factorial`: Faz calculo de fatorial.
+<br>
+<br>
+E para fazer os usos destas funcionalidades basta eu fazer como apresentado acima. Usando o from import. E caso eu queira importar mais de uma funcionalidade basta eu utilizar a ",".
+<br>
+`from math import ceil`
+<br>
+`from math import floor, sqrt`
+<br> Mas caso eu queira importar todas as funcionalidades de `math` eu só preciso importar ela.
+<br>
+`import math`.
+## Prática!
+<code>
+import math
+num = int(input('Digite um numero: '))
+raiz = math.sqrt(num)
+print('A raiz de {} é igual á {}'.format(num, raiz))
+# O resultado podendo ser arrendondado para cima com o ceil.
+print('A raiz de {} é igual á {}'.format(num, math.ceil(raiz)))
+ </code>
+ Desta forma importando todas as funcionalidades da biblioteca eu tenho mais recursos, mas também preciso de mais memoria.
+ <br>
+
