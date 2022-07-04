@@ -20,10 +20,12 @@ Vou agora para um exemplo prático! Digamos que eu tenha estas três "biblioteca
   - Pizza
   - Hot dog
   - Sopa
+<br>
 - **Bebida**.
 	- Milkshake
   - Coca-cola
   - Agua
+<br>
 - **Doces**.
 	- Pudim
   - Arroz doce
@@ -48,7 +50,7 @@ Basta eu utilizar o comando da seguinte forma.
 `from doce import pudim`
 <br><br>
 Existem duas formas básicas de importar uma biblioteca, uma forma mais generalista que é sendo bem explicito com o "import", e sendo especifico com uma funcionalidade com "from ... import ...".
-<br><br>
+--- ---
 ### Vamos a um exemplo prático de uma biblioteca real.
 No python assim que ele é instalado juntamente com ele está incluso uma biblioteca chamada `math` que significa matematica.
 <br>
@@ -81,9 +83,34 @@ import math
 num = int(input('Digite um numero: '))
 raiz = math.sqrt(num)
 print('A raiz de {} é igual á {}'.format(num, raiz))
-# O resultado podendo ser arrendondado para cima com o ceil.
+// O resultado podendo ser arrendondado para cima com o ceil.
 print('A raiz de {} é igual á {}'.format(num, math.ceil(raiz)))
  </code>
- Desta forma importando todas as funcionalidades da biblioteca eu tenho mais recursos, mas também preciso de mais memoria.
- <br>
+ 
+Desta forma importando todas as funcionalidades da biblioteca eu tenho mais recursos, mas também preciso de mais memoria.
 
+## Metodo from import
+<code>
+from math import sqrt
+num = int(input('Digite um numero: '))
+raiz = sqrt(num)
+print('A raiz de {} é igual á {}'.format(num, raiz))
+// O resultado podendo ser arrendondado para cima com o ceil.
+print('A raiz de {} é igual á {}'.format(num, math.ceil(raiz)))
+</code>
+
+Desta forma eu estou impotando apenas o metodo sqrt da biblioteca math.<br>
+Portanto, desta formas eu não preciso chamar math.sqrt na variavel "raiz" <br>
+Basta eu utilizar apenas:<br>
+raiz = sqrt(num).
+
+## Encontrando as bibliotecas.
+Para eu encontrar as bibliotexas padrões do Python, basta clicar no link abaixo.<br>
+https://docs.python.org/3/library/index.html <br>
+**Agora irei importar numeros randomicos com a biblioteca ramdom**
+
+<blockquote>
+import ramdom<br>
+num = ramdom.ramdom()<br>
+print(num)<br>
+</blockquote>
