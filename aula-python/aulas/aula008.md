@@ -33,8 +33,9 @@ Vou agora para um exemplo prático! Digamos que eu tenha estas três "biblioteca
   - Bolo
 <br>
 Para eu importar qualquer destas bibliotecas eu uso o seguinte comando:
-<br>
-`import comida`
+~~~python
+import comida
+~~~
   <br>
 Desta forma o python irá importar todas as comidas desta biblioteca.
 <br>
@@ -46,9 +47,10 @@ o conteúdo que há nela, mas... como fazemos se nós quisermos apenas uma funci
 Mas digamos que eu queira importar apenas o pudim da biblioteca doces, como devo fazer?
 <br><br>
 Basta eu utilizar o comando da seguinte forma.
-<br>
-`from doce import pudim`
-<br><br>
+
+~~~python
+from doce import pudim
+~~~
 Existem duas formas básicas de importar uma biblioteca, uma forma mais generalista que é sendo bem explicito com o "import", e sendo especifico com uma funcionalidade com "from ... import ...".
 --- ---
 ### Vamos a um exemplo prático de uma biblioteca real.
@@ -70,34 +72,38 @@ Nas aulas anteriores eu aprendi os operadores básicos de matematica do python, 
 <br>
 <br>
 E para fazer os usos destas funcionalidades basta eu fazer como apresentado acima. Usando o from import. E caso eu queira importar mais de uma funcionalidade basta eu utilizar a ",".
-<br>
-`from math import ceil`
-<br>
-`from math import floor, sqrt`
+~~~python
+from math import ceil
+~~~
+~~~python
+from math import floor, sqrt
+~~~
 <br> Mas caso eu queira importar todas as funcionalidades de `math` eu só preciso importar ela.
-<br>
-`import math`.
+~~~python
+import math
+~~~
+
 ## Prática!
-<code>
+~~~python
 import math
 num = int(input('Digite um numero: '))
 raiz = math.sqrt(num)
 print('A raiz de {} é igual á {}'.format(num, raiz))
-// O resultado podendo ser arrendondado para cima com o ceil.
+# O resultado podendo ser arrendondado para cima com o ceil.
 print('A raiz de {} é igual á {}'.format(num, math.ceil(raiz)))
- </code>
+ ~~~
  
 Desta forma importando todas as funcionalidades da biblioteca eu tenho mais recursos, mas também preciso de mais memoria.
 
 ## Metodo from import
-<code>
+~~~python
 from math import sqrt
 num = int(input('Digite um numero: '))
 raiz = sqrt(num)
 print('A raiz de {} é igual á {}'.format(num, raiz))
-// O resultado podendo ser arrendondado para cima com o ceil.
+# O resultado podendo ser arrendondado para cima com o ceil.
 print('A raiz de {} é igual á {}'.format(num, math.ceil(raiz)))
-</code>
+~~~
 
 Desta forma eu estou impotando apenas o metodo sqrt da biblioteca math.<br>
 Portanto, desta formas eu não preciso chamar math.sqrt na variavel "raiz" <br>
@@ -109,8 +115,8 @@ Para eu encontrar as bibliotexas padrões do Python, basta clicar no link abaixo
 https://docs.python.org/3/library/index.html <br>
 **Agora irei importar numeros randomicos com a biblioteca ramdom**
 
-<blockquote>
+~~~python
 import ramdom<br>
-num = ramdom.ramdom()<br>
-print(num)<br>
-</blockquote>
+num = ramdom.ramdom()
+print(num)
+~~~
