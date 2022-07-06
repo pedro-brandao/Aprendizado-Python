@@ -112,11 +112,48 @@ raiz = sqrt(num).
 
 ## Encontrando as bibliotecas.
 Para eu encontrar as bibliotexas padrões do Python, basta clicar no link abaixo.<br>
-https://docs.python.org/3/library/index.html <br>
-**Agora irei importar numeros randomicos com a biblioteca ramdom**
-
+https://docs.python.org/3/library/index.html
+<br>
+<br>
+**_Agora irei importar numeros randomicos com a biblioteca ramdom._**
+<br>
+Essa biblioteca gera numeros aleatorios, podemos ver ambaixo o codigo importando a biblioteca inteira.
+<br>
 ~~~python
-import ramdom<br>
+import ramdom
 num = ramdom.ramdom()
 print(num)
+~~~
+Desta forma ele retorna sempre um numero float aleatorio entre 0 e 1. então a resposta ficará semelhante a essa:
+<br>
+0.352830
+<br>
+<br>
+Eu também posso utilizar o `randint`, que randomiza numeros inteiros, e posso passar o intervalo dos valores que preciso que ele percorra.
+~~~python
+import ramdom
+num = ramdom.ramdint(1, 10) # Metodo randint para numeros inteiros.
+print(num)
+~~~
+Desta forma ele fica randomizando apenas entre 1 e 10 como eu solicitei acima.
+<br>
+<blockquote>
+Uma Dica! Se eu apertar Ctrl + Space. após digitar "import" é me retornado todas as bibliotecas instaladas e que eu posso instalar, Desta forma fica melhor para visualização das bibliotecas.<br>
+Com este comando eu conseguirei verificar uma grande variedade de bibliotecas python.
+</blockquote>
+
+---
+### Utilizando Bibliotecas Pypi
+Mas todas estas são apenas uma parte, pois eu posso acessar o Pypi pelo proprio site da Python e ter acesso a inumeras bibliotecas.
+Basta acessar o site https://pypi.org/ <br>
+No Pypi diversos desenvolvedores podem criar suas proprias bibliotecas e divulgarem lá, portanto é posivel ter bibliotecas de diversos conteúdos.<br>
+Vou utilizar uma chamada **emoji** para demostração, esta biblioteca tem uma funcionalidade bem simples, ela basicamente mostra emoji.<br>
+Mas caso eu queira importar ela diretamente eu não coseguirei, para isso eu preciso instalar a biblioteca.
+~~~bash
+pip install emoji
+~~~~
+Desta forma eu instalo a biblioteca.<br>
+Após isso basta eu importar ela em meu código.
+~~~python
+import emoji
 ~~~
