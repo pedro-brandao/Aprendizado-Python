@@ -152,8 +152,17 @@ Mas caso eu queira importar ela diretamente eu não coseguirei, para isso eu pre
 ~~~bash
 pip install emoji
 ~~~~
-Desta forma eu instalo a biblioteca.<br>
+Desta forma eu instalo a biblioteca escolhida.<br>
 Após isso basta eu importar ela em meu código.
 ~~~python
 import emoji
 ~~~
+Para que eu veja quais ferramentas eu consigo usar atravé da biblioteca, basta eu acessar as sheets da biblioteca em questão.<br>
+Exemplo:<br>
+No caso da biblioteca emoji eu busco a ***emoji-cheat-sheet*** na pagina https://www.webfx.com/tools/emoji-cheat-sheet/ <br>
+Após a imoportação do modulo emoji eu posso utilizar da seguinte forma: <br>
+~~~python
+import emoji
+print(emoji.emojize("Olá Mundo! :earth_americas:", use_aliases=True))
+~~~
+Desta forma eu tenmho o resultado um print na tela de "Olá Mundo!" com o emoji do globo no final.<br>
