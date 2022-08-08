@@ -1,20 +1,20 @@
 # Utilizando Modulos em Python
 
 ## Oque são modulos em Python?
-Primeiro precisamos entender oque são os modulos:
+Primeiro precisamos entender oque são os modulos,
 Os modulos são como acessorios para o python, o python inicalmente vem limpo, com apenas as ferramentas necessarias para serem executadas. Dai vem os modulos, que são como complementos, Estes modulos em python são chamados de bibliotecas.
 <br>
 <br>
 Podemos entender os modulos da seguinte forma, digamos que o nosso corpo seja a linguagem e as comidas, bebidas e doces sejam os modulos.
 <br>
 <br>
-Da mesma forma em que durante o dia necessitamos inserir estes alimentos em nosso corpo, assim são os modulos, nós só inserimos eles mediante a necessidade.
+Da mesma forma em que durante o dia necessitamos inserir estes alimentos em nosso corpo, assim são os modulos. Nós só inserimos eles mediante a necessidade.
 <br>
 <br>
-Trazendo para a programação isso é chamado de importação de bibliotecas.
+Trazendo para a programação isso é chamado de importação de bibliotecas. 
 <br>
 <br>
-Vou agora para um exemplo prático! Digamos que eu tenha estas três "bibliotecas".
+Vou agora para um exemplo prático! Digamos que eu tenha estas três "bibliotecas": Comida, Bebida e Doces.
 - **Comida**.
 	- Hambuguer
   - Pizza
@@ -44,7 +44,7 @@ Para utilizarmos as bibliotecas eu importo todas as que iremos utilizar no inici
 Mas devemos entender que quando importamos alguma biblioteca, é importado tudo 
 o conteúdo que há nela, mas... como fazemos se nós quisermos apenas uma funcionalidade dela?
 <br><br>
-Mas digamos que eu queira importar apenas o pudim da biblioteca doces, como devo fazer?
+Digamos que eu queira importar apenas o pudim da biblioteca doces, como devo fazer?
 <br><br>
 Basta eu utilizar o comando da seguinte forma.
 
